@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+.container {
+    max-width: 700px;
+    width: min(90%, calc(100vw - 20px));
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 8px 0;
+    letter-spacing: -2px;
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0003;
+}
+
+section {
+    padding: 10px 10px 50px;
+    margin-bottom: 50px;
+}
+
+section:nth-of-type(2n){
+    background-color: #eee;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 8px ;
+    font-weight: 600;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    font-size: .8rem;
+}
+
+.icon {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    width: min(80%, 300px);
+}
+.icon i {
+    color: #000;
+    font-size: 2rem;
+}
+
+/* Start Special Styles */
+.my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.me {
+    width: 16.5rem;
+    height: 16.5rem;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.me ~ span {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* Start About me */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about > p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+/* End About me */
+
+/* Start Skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills .list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills .list > span {
+    background-color: #48041210;
+    padding: 8px 8px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 2px #0003;
+    font-weight: 600;
+}
+/* End Skills */
+
+/* Start Work Experience && Education */
+.work-experience .list, .education .list {
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.work-experience .list .item, .education .list .item {
+    padding: 8px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+}
+.work-experience .list .item img , .education .list .item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.work-experience .list .item .info , .education .list .item .info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.work-experience .list .item .info h3 , .education .list .item .info h3{
+    font-size: 1.1em;
+}
+.work-experience .list .item .info span, .education .list .item .info span{
+    color: #777;
+    font-size: 0.8rem;
+}
+.work-experience .list .item .date, .education .list .item .date{
+    color: #aaa;
+    font-size: 0.7rem;
+}
+/* End Work Experience && Education */
+
+/* Start Projects  */
+.projects > p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 8px 0;
+}
+.projects .description{
+    color: #777;
+}
+
+.projects .list {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 8px;
+    justify-content: center;
+}
+
+.projects .list .item {
+    max-width: 380px;
+    width: 250px;
+    flex-grow: 1;
+    border: 3px solid #7773;
+    border-radius: 8px;
+}
+
+.projects .list .item:hover {
+    transform: translate(0, -8px);
+    box-shadow: 0 0 8px #aaaa ;
+}
+
+.projects .list .item .info {
+    padding: 8px;
+}
+.projects .list .item .info .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.projects .list .item .info .buttons > i {
+    font-size: 1.5rem;
+    color: #777a;
+}
+
+.projects .list .item .info p {
+    color: #777;
+    font-size: 0.8rem;
+    word-spacing: 2.5px;
+    line-height: 16px;
+    margin: 8px 0;
+}
+
+.projects .list .item .info .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 8px 0;
+}
+.projects .list .item .info .tags span {
+    padding: 8px ;
+    background-color: #7771;
+    border-radius: 3px 5px;
+    line-height: 12px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.projects .list .item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0 ;
+}
+/* End Projects  */
+/* End Special Styles */
+
+/* Footer */
+footer {
+    padding: 8px;
+    background-color: #282b2e;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+/* Footer */

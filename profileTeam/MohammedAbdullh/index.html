@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد عبد الله - مهندس برمجيات</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo"></div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="#about">عني</a>
+                <a href="#skills">مهاراتي</a>
+                <a href="#experience">خبراتي</a>
+                <a href="#contact">تواصل معي</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="images/profileImg.jpg" alt="محمد عبد الله" class="profile-image">
+            <h1>محمد عبد الله</h1>
+            <h2>مهندس برمجيات</h2>
+            <div id="contact" class="social-links">
+                <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://t.me/M8_Qasm" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:your.alawadymohamed993@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://facebook.com/mohammed77793" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        
+        <div class="profile-content">
+            <h3 id="about">نبذة مختصرة</h3>
+            <p>
+                مهندس برمجيات متحمس مع خبرة في تطوير تطبيقات الويب. متخصص في تطوير تطبيقات ومواقع الويب وشغوف بإنشاء تجارب مستخدم سلسة وجذابة.
+            </p>
+
+            <h3 id="skills">المهارات التقنية</h3>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Sql</span>
+                 <span class="skill-tag">Plsql</span>
+                <span class="skill-tag">Git</span>
+            </div>
+
+            <h3 id="experience">الخبرات والمشاريع</h3>
+            <div class="projects">
+                <div class="project-item">
+                    <h4>منصة فهرس</h4>
+                    <p>منصة تشاركية للملخصات والمراجع العلمية تهدف لتسهيل الوصول للمعرفة ومشاركتها</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>الخبرات العامة</h3>
+            <ul>
+                <li>تطوير مواقع ويب تفاعلية</li>
+                <li>تحسين أداء تطبيقات الويب</li>
+                <li>العمل ضمن فرق متعددة التخصصات</li>
+                <li>تطبيق أفضل ممارسات البرمجة</li>
+            </ul>
+        </div>
+    </div>
+ 
+
+    <footer>
+        <div class="footer-content">
+            <p>جميع الحقوق محفوظة &copy; 2025 محمد عبد الله</p>
+        </div>
+    </footer>
+
+    <script>
+        // تفعيل القائمة للشاشات الصغيرة
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // إغلاق القائمة عند الضغط على أي رابط
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
